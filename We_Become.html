@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title src="C:\Users\Asus\Desktop\games web\slope\image-removebg-preview (1).png">we become what we behold</title>
+    <link href="https://fonts.cdnfonts.com/css/distant-galaxy" rel="stylesheet">
+
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .game {
+            width: 100%;
+            height: 70vh;
+            border: none;
+            margin-top: 3rem;
+        }
+
+        .logo{
+            display: flex;
+            justify-content: left;
+            align-items: bottom;
+            height: 100vh;
+
+            width: 150px;
+            height: 150px;
+
+            background-position: center;
+
+            background-size: cover;
+            
+            background-image: url('https://yt3.ggpht.com/R4dppgFcleWwaYyTiwfzlD5AgYmGlXhqd2Qk_0F--M3eSCk4dkJFMNKDzJKc77nHXtOd97BUAszyAQ=s640-c-fcrop64=1,00000000ffffffff-nd-v1');
+
+            border-width: 0px;
+            
+        }
+
+        .fullscreen{
+
+            background-color: blue;
+
+            width: 50vh;
+            height: 20px;
+            
+            
+
+            
+        }
+
+        
+
+         .fullbtn{
+
+            background-color: rgb(255, 255, 255);
+
+            width: 50vh;
+            height: 30px;
+            
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+
+            font-family: "Smooch Sans", serif;
+            font-optical-sizing: auto;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            background-image: linear-gradient(red,white);
+            padding: 0px ;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-image: #555;
+            color: white;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar h1{
+            font-family: 'Distant Galaxy', sans-serif;
+            color: #d88c00;
+
+            
+            text-shadow:
+                -2px -2px 0 #ff0000,
+                2px -2px 0 #ff0000,
+                -2px 2px 0 #ff0000,
+                2px 2px 0 #ff0000,
+                -3px 0px 0 #ff0000,
+                3px 0px 0 #ff0000,
+                0px -3px 0 #ff0000,
+                0px 3px 0 #ff0000;
+            float: left;
+
+
+            
+        }
+        .navbar li{
+          font-family: 'Distant Galaxy', sans-serif;
+            color: #d88c00;
+
+            
+            text-shadow:
+                -2px -2px 0 #ff0000,
+                2px -2px 0 #ff0000,
+                -2px 2px 0 #ff0000,
+                2px 2px 0 #ff0000,
+                -3px 0px 0 #ff0000,
+                3px 0px 0 #ff0000,
+                0px -3px 0 #ff0000,
+                0px 3px 0 #ff0000;
+            float: left;  
+        }
+
+        .logo-text{
+            font-family: 'Distant Galaxy', sans-serif;
+            color: #d88c00;
+
+            
+            text-shadow:
+                -2px -2px 0 #ff0000,
+                2px -2px 0 #ff0000,
+                -2px 2px 0 #ff0000,
+                2px 2px 0 #ff0000,
+                -3px 0px 0 #ff0000,
+                3px 0px 0 #ff0000,
+                0px -3px 0 #ff0000,
+                0px 3px 0 #ff0000;
+            text-align: center;
+            font-size: 4rem; 
+        }
+
+    </style>
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJZQQ4NNJ5"></script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YJZQQ4NNJ5');
+    </script>
+
+
+<body>
+
+    <nav class="navbar">
+        
+
+        <ul>
+            
+            <h1>CSP</h1>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    
+
+
+    
+    <div id="gameContainer" style="width:100%; height:70vh; position:relative;">
+        <iframe id="gameIframe" allowfullscreen allow="fullscreen" class="game" src="https://mc0825.github.io/g69/class-485" frameborder="0" style="width:100%; height:100%; border:0;"></iframe>
+        <button class="fullbtn" onclick="toggleFullscreen()">Fullscreen</button>
+    </div>
+
+
+
+    <script>
+        function toggleFullscreen() {
+            var iframe = document.getElementById('gameIframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
