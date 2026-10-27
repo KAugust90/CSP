@@ -358,8 +358,13 @@
         },
 
         {
-            url:"We-Become.html",
+            url:"We_Become.html",
             img:"we-become.jpg"
+        },
+
+        {
+            url:"GDash.html",
+            img:"GD.webp"
         },
 
         
@@ -378,10 +383,12 @@
             let myDiv = child.getElementsByTagName("div")[0];
             let url = urls [i];
             gameblock.children[i].href = url.url;
-            myDiv.innerHTML = "<img src= \" C:/Users/Asus/Desktop/WEB/games web/Main/img/"+url.img+" \">";
+            myDiv.innerHTML = "<img src= \"" +url.img+" \">";
 
         }
     </script>
 
 </body>
 </html>
+
+//
