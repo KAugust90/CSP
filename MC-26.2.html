@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title src="C:\Users\Asus\Desktop\games web\slope\image-removebg-preview (1).png">GD</title>
+    <link href="https://fonts.cdnfonts.com/css/distant-galaxy" rel="stylesheet">
+
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .game{
+            margin: 0 auto;
+            display: block;
+
+            justify-content: center;
+            outline: 10px;
+            outline-color: black;
+            top: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -55%);
+
+            width: 65%;
+
+            height: 65%;
+
+            border-radius: 20px;
+            
+        }
+
+        .logo{
+            display: flex;
+            justify-content: left;
+            align-items: bottom;
+            height: 100vh;
+
+            width: 150px;
+            height: 150px;
+
+            background-position: center;
+
+            background-size: cover;
+            
+            background-image: url('https://yt3.ggpht.com/R4dppgFcleWwaYyTiwfzlD5AgYmGlXhqd2Qk_0F--M3eSCk4dkJFMNKDzJKc77nHXtOd97BUAszyAQ=s640-c-fcrop64=1,00000000ffffffff-nd-v1');
+
+            border-width: 0px;
+            
+        }
+
+        .fullscreen{
+
+            background-color: blue;
+
+            width: 50vh;
+            height: 20px;
+            
+            
+
+            
+        }
+
+        
+
+         .fullbtn{
+
+            background-color: rgb(255, 255, 255);
+
+            width: 50vh;
+            height: 30px;
+            
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+
+            font-family: "Smooch Sans", serif;
+            font-optical-sizing: auto;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            background-image: linear-gradient(red,white);
+            padding: 0px ;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-image: #555;
+            color: white;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar h1{
+            font-family: 'Distant Galaxy', sans-serif;
+            color: #d88c00;
+
+            
+            text-shadow:
+                -2px -2px 0 #ff0000,
+                2px -2px 0 #ff0000,
+                -2px 2px 0 #ff0000,
+                2px 2px 0 #ff0000,
+                -3px 0px 0 #ff0000,
+                3px 0px 0 #ff0000,
+                0px -3px 0 #ff0000,
+                0px 3px 0 #ff0000;
+            float: left;
+
+            margin-left: 0.5rem;
+
+
+            
+        }
+        .navbar li{
+          font-family: 'Distant Galaxy', sans-serif;
+            color: #d88c00;
+
+            
+            text-shadow:
+                -2px -2px 0 #ff0000,
+                2px -2px 0 #ff0000,
+                -2px 2px 0 #ff0000,
+                2px 2px 0 #ff0000,
+                -3px 0px 0 #ff0000,
+                3px 0px 0 #ff0000,
+                0px -3px 0 #ff0000,
+                0px 3px 0 #ff0000;
+            float: left;  
+        }
+
+        .logo-text{
+            font-family: 'Distant Galaxy', sans-serif;
+            color: #d88c00;
+
+            
+            text-shadow:
+                -2px -2px 0 #ff0000,
+                2px -2px 0 #ff0000,
+                -2px 2px 0 #ff0000,
+                2px 2px 0 #ff0000,
+                -3px 0px 0 #ff0000,
+                3px 0px 0 #ff0000,
+                0px -3px 0 #ff0000,
+                0px 3px 0 #ff0000;
+            text-align: center;
+            font-size: 4rem; 
+
+            
+        }
+
+        .gamesblock-left, .gamesblock-right{
+            transition: 0.5s;
+
+            overflow: hidden;
+            width: 240px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 10px;
+
+            background-image: url("");
+            
+            background-position: center;
+
+            border-radius: 20px;
+
+            font-size: 30px;
+
+           
+            
+        }
+
+        .gamesblock-left div, .gamesblock-right div {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gamesblock-left div img, .gamesblock-right div img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gamesblock-container{
+            display: grid;
+            grid-template-columns: 2fr 0fr;
+            grid-template-rows: repeat(4, 5fr);
+            gap: 10px;
+            font-size: 45px;
+            padding-top: 5.5rem;
+        }
+
+    </style>
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJZQQ4NNJ5"></script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YJZQQ4NNJ5');
+    </script>
+
+
+<body>
+
+    <nav class="navbar">
+        
+
+        <ul>
+            
+            <h1>CSP</h1>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    
+    <div>
+        
+        <iframe id="gameIframe" allowfullscreen class="game" src="https://kaugust90.github.io/MC-26.2/" frameborder="0"></iframe>
+        <button class="fullbtn" onclick="toggleFullscreen()">Fullscreen</button>
+    </div>
+
+    <script>
+        function toggleFullscreen() {
+            var iframe = document.getElementById('gameIframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+
+    <div class="gamesblock-container">
+
+       <a class="gamesblock-left" href=""><div></div></a>
+
+       <a class="gamesblock-left" href=""><div></div></a>
+
+       <a class="gamesblock-left" href=""><div></div></a>
+
+       <a href="" class="gamesblock-right"><div></div></a>
+
+       <a class="gamesblock-right" href=""><div></div></a>
+
+       <a class="gamesblock-right" href=""><div></div></a>
+
+      
+
+    </div>
+
+        <script>
+            function shuffle(array) {
+            let currentIndex = array.length;
+
+            // While there remain elements to shuffle...
+            while (currentIndex != 0) {
+
+                // Pick a remaining element...
+                let randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                // And swap it with the current element.
+                [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]];
+            }
+            }
+
+
+
+        function getRandomElement(arr) {
+            return arr[Math.floor(Math.random() * arr.length)];
+        }
+//"poki.com", "y8.com", "crazygames.com", "miniclip.com", "armorgames.com"
+        let urls = [{
+            url:"TD-1.html",
+            img:"BTD-1.jpg"
+        },
+
+        {
+            url:"TD-2.html",
+            img:"BTD-2.avif"
+        },
+
+        {
+            url:"TD-3.html",
+            img:"BTD-3.png"
+        },
+
+        {
+            url:"TD-5.html",
+            img:"BTD-4.png"
+        },
+
+        {
+            url:"TD-5.html",
+            img:"BTD-5.avif"
+        },
+
+        {
+            url:"Doom.html",
+            img:"Doom 1.jpg"
+        },
+
+        {
+            url:"Hook_man.html",
+            img:"stickmanhook.jpg"
+        },
+
+        {
+            url:"IM-quiz.html",
+            img:"IM-qiuz.png"
+        },
+
+        {
+            url:"slope.html",
+            img:"slope.jpg"
+        },
+
+        {
+            url:"snow-rider.html",
+            img:"snow-rider.jpg"
+        },
+
+        {
+            url:"Sub-s.html",
+            img:"Sub-s san-f.jpg"
+        },
+
+        {
+            url:"We_Become.html",
+            img:"we-become.jpg"
+        },
+
+        {
+            url:"GDash.html",
+            img:"GD.webp"
+        },
+
+        {
+            url:"MC.html",
+            img:"MC.png"
+        },
+
+        
+        
+        
+        ];
+
+        shuffle (urls)
+
+        const gameblock = document.getElementsByClassName("gamesblock-container")[0];
+
+        console.log(gameblock);
+        for (let i = 0; i < gameblock.children.length; i++) {
+            console.log("hello");
+            let child = gameblock.children[i];
+            let myDiv = child.getElementsByTagName("div")[0];
+            let url = urls [i];
+            gameblock.children[i].href = url.url;
+            myDiv.innerHTML = "<img src= \"" +url.img+" \">";
+
+        }
+    </script>
+
+</body>
+</html>
+
+//
