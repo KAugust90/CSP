@@ -296,13 +296,22 @@
             return arr[Math.floor(Math.random() * arr.length)];
         }
 
-        const urls = ["poki.com", "y8.com", "crazygames.com", "miniclip.com", "armorgames.com"];
+        const urls = ["poki.com", "y8.com", "crazygames.com", "miniclip.com", "armorgames.com ", "kongregate.com", "newgrounds.com", "addictinggames.com", "nitrome.com", "gamepix.com"];
+        
+        
 
         const gameblock = document.getElementsByClassName("gamesblock-container")[0];
 
-        console.log(gameblock);
+        const picked = urls 
+        .slice()
+        .sort(() => Math.random() - 0.5)
+        .slice(0, gameblock.children.length);
+        
+        console.log(picked);
+        
         for (let i = 0; i < gameblock.children.length; i++) {
-            console.log("hello");
+            let item = urls[i % urls.length];
+            console.log(item);
             gameblock.children[i].href = getRandomElement(urls);
         }
     </script>
